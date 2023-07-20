@@ -1,0 +1,41 @@
+.galeria {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    width: 95%;
+    margin: auto;
+    grid-gap: 10px;
+    padding: 40px 0;
+    overflow: hidden;
+  }
+  
+  .galeria img {
+    width: $full-width;
+    vertical-align: top;
+    height: 500px;
+    object-fit: cover;
+  }
+  
+  .galeria > div {
+    display: block;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.5);
+  }
+  
+  .galeria light-box {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.5);
+    width: $full-width;
+    height: 100vh;
+    z-index: 1000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .row {
+    width: 90%;
+    margin-left: 10px;
+  }
